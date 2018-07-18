@@ -4,7 +4,9 @@ To fast install dependences, I recommend to use [yarn](https://yarnpkg.com/lang/
 
 For example:
     `npm i && npm run dev`
+    
     `npm run test`
+    
     `npm run build`
 
 ## Screenshots
