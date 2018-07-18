@@ -8,7 +8,7 @@ For example:
     `npm run build`
 
 ## Screenshots
-![Test Instructions](/pricesearch/blob/master/screenshot.png?raw=true)
+![Test Instructions](https://raw.githubusercontent.com/etamity/pricesearch/master/screenshot.png?raw=true)
 
 ## Install 
 
