@@ -1,5 +1,7 @@
 # Price Search
 
+Preview: https://etamity.github.io/pricesearch/index.html
+
 To fast install dependences, I recommend to use [yarn](https://yarnpkg.com/lang/en/). Otherwise, you can use `npm run` instead `yarn`.
 
 For example:
