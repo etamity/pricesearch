@@ -2,6 +2,8 @@
 
 To fast install dependences, I recommend to use [yarn](https://yarnpkg.com/lang/en/). 
 
+Preview: https://etamity.github.io/pricesearch/index.html
+
 ## Screenshots
 ![Test Instructions](https://raw.githubusercontent.com/etamity/pricesearch/master/screenshot.png?raw=true)
 
@@ -30,11 +32,11 @@ Test report will be gernerated under project folder root `test-report.html`
 
 For example:
     
-    `npm i && npm run dev`
+`npm i && npm run dev`
     
-    `npm run test`
+`npm run test`
     
-    `npm run build`
+`npm run build`
 
 ## Dependences
     [Coreui](https://coreui.io/)
@@ -45,3 +47,7 @@ For example:
 
 The project able to generate routes base `Pages/index.js` file, as long as creating new page under `Pages` folder, and export it in `Pages/index.js`, the `Libs/RouterWrapper` will generate routes.
 Please refer `AppContainer.js` file about dynamic routing.
+
+## Redux
+
+Under `Reducers/Search.js` defined search reducer, which store the search results, pagination, and loading states. The actions are also sitting in same file, only reducer actions able to chage global store states. 
