@@ -11,7 +11,6 @@ describe('<PriceChart> Start Component Test', () => {
 
     it('renders chart data without crashing', () => {
         const div = document.createElement('div');
-
         const data = {
             'January': 20, 
             'February': 100, 

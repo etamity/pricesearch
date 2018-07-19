@@ -22,6 +22,7 @@ const ProductCard = (props) => {
     </Container>;
 
     const thumbnail = <img onClick={props.onClick} src={props.product.image_url} className="img-fluid c-pointer" style={{ maxHeight: '200px' }} />
+    
     return <Row className="my-5 product-card-row">
         <Col className="d-flex align-items-center justify-content-center" md="2">
             {thumbnail}

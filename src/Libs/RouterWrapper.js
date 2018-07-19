@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class RouterWrapper extends Component {
-  constructor(props) {
-    super(props);
-
-  }
   render() {
     const context = this.props.context;
   

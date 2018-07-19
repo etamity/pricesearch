@@ -7,6 +7,7 @@ describe('Search store value test', () => {
         SearchAction.updateLoading(true);
         expect(store.getState().search.loading).toEqual(true);
     });
+
     it('error value should be `this is an error message`', () => {
         SearchAction.updateError('this is an error message');
         expect(store.getState().search.error).toEqual('this is an error message');
@@ -32,6 +33,7 @@ describe('Search store value test', () => {
         SearchAction.updateResults(['update']);
         expect(store.getState().search.results).toEqual(['update']);
     });
+    
     it('update function return value should match', () => {
         const action = {
             type: SearchActionTypes.APPEND_RESULTS,

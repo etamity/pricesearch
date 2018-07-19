@@ -41,6 +41,7 @@ export const SearchAction = {
     }
     store.dispatch(action);
   },
+
   appendResults: (results) => {
     const action = {
       type: SearchActionTypes.APPEND_RESULTS,
@@ -48,6 +49,7 @@ export const SearchAction = {
     }
     store.dispatch(action);
   },
+
   updatePagination: (pagination)=>{
     const action = {
       type: SearchActionTypes.UPDATE_PAGINATION,
@@ -55,6 +57,7 @@ export const SearchAction = {
     }
     store.dispatch(action);
   },
+
   updateError: (error)=>{
     const action = {
       type: SearchActionTypes.UPDATE_ERROR,
@@ -62,6 +65,7 @@ export const SearchAction = {
     }
     store.dispatch(action);
   },
+  
   updateLoading: (loading)=>{
     const action = {
       type: SearchActionTypes.UPDATE_LOADING,

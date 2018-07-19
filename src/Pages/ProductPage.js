@@ -2,7 +2,9 @@ import React from 'react';
 import { Row, Col, Container, Button, Badge, Card, CardBody, CardHeader } from 'reactstrap';
 import PriceChart from 'Components/PriceChart';
 export const ProductPage = (props) => {
+
     const product = props.location && props.location.state && props.location.state.product;
+
     if (!product) {
         props.history.push({
             pathname: '/searchpage',
@@ -17,8 +19,8 @@ export const ProductPage = (props) => {
             {product.description}
         </p>
         <Button color="primary" disabled><strong>PRICE: {product.price}</strong></Button>
-
     </Container>;
+
     return <Container>
         <Card>
             <CardHeader className="sticky-header">

@@ -52,6 +52,7 @@ const PriceChart = (props) => {
       };
       
       const chart = props.type === 'line' ? <Line data={line} options={options} /> : <Bar data={bar} options={options} />;
+    
     return <div className="chart-wrapper">
       {chart}
   </div>

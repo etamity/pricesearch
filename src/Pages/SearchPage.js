@@ -28,12 +28,16 @@ class SearchPageView extends Component {
         this.getParams = this.getParams.bind(this);
         this.showProductDetail = this.showProductDetail.bind(this);
     }
+
     showProductDetail(product) {
         this.props.history.push({
             pathname: '/productpage',
             state: { product }
         })
+        // reset scrollbar to top
+        window.scrollTo(0, 0);
     }
+
     getParams(sort, filter, nextPage) {
         let params = {
             q: this.state.searchText,
@@ -56,28 +60,34 @@ class SearchPageView extends Component {
         });
         return params;
     }
+
     orderbyToggle() {
         this.setState({
             orderbyDropdownOpen: !this.state.orderbyDropdownOpen,
         });
     }
+
     filtersToggle() {
         this.setState({
             filtersDropdownOpen: !this.state.filtersDropdownOpen,
         });
     }
+
     sortResults(sort) {
         Products.find(this.getParams(sort, this.state.filter), true);
         this.setState({ sort });
     }
+
     filterResults(filter) {
         Products.find(this.getParams(this.state.sort, filter), true);
         this.setState({ filter })
 
     }
+
     updateSearchText(value) {
         this.setState({ searchText: value });
     }
+
     loadNextPage(nextPage) {
         this.setState({ currentPage: nextPage });
         const params = Object.assign({}, this.getParams(), {
@@ -85,6 +95,7 @@ class SearchPageView extends Component {
         })
         Products.find(params);
     }
+
     doSearch() {
         this.setState({ currentPage: 1 });
         Products.find(this.getParams(), true);
