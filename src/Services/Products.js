@@ -1,7 +1,8 @@
 import { SearchAction } from 'Reducers/Search';
 import LinkParse from 'parse-link-header';
 
-const host = 'https://pricesearcher-frontend-test.herokuapp.com';
+//Heroku will wake up for a while(20+) seconds
+const host = 'https://pricesearcher-frontend-test.herokuapp.com'; 
 const endpoint = host + '/products?';
 
 export default {

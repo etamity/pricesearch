@@ -2,7 +2,17 @@ import { store } from 'App';
 import reducerUpdate, { SearchAction, SearchActionTypes } from 'Reducers/search';
 import LinkParse from 'parse-link-header';
 
-describe('Search store value test', () => {
+describe('Search store value & structure test', () => {
+
+    it('should match initial state', () => {
+        expect(store.getState().search).toEqual({
+            loading: false,
+            results: [],
+            error: null,
+            pagination: {}
+          });
+    });
+
     it('loading value should be true', () => {
         SearchAction.updateLoading(true);
         expect(store.getState().search.loading).toEqual(true);
